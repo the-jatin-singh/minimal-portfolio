@@ -15,9 +15,9 @@ const page = () => {
                 </Link>
                 <h1 className='md:text-xl text-lg font-medium text-darkTxt'>Timeless Wisdom</h1>
             </div>
-            <NavItems />
+            <NavItems wisdom={false} />
             </div>
-            <p className='md:text-lg text-md text-lightTxt'>{"What's your mood today? (and please don't overuse it)"}</p>
+            <p className='md:text-lg text-md text-lightTxt'>{"What's your mood today? (please don't overuse it)"}</p>
             <Wisdom />
         </Container>
     )
