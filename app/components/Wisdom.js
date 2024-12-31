@@ -22,8 +22,12 @@ const Wisdom = () => {
     setLoading(true);
     setError(false);
     try {
+      const apiKey = process.env.NEXT_PUBLIC_API_NINJA_KEY;
+      if (!apiKey) {
+        throw new Error('API key is missing');
+      }
       const response = await fetch(`https://api.api-ninjas.com/v1/quotes?category=${category}`, {
-        headers: { 'X-Api-Key': process.env.NEXT_PUBLIC_API_NINJA_KEY }
+        headers: { 'X-Api-Key': apiKey }
       });
       if (!response.ok) {
         throw new Error(`Error: ${response.status}`);

@@ -341,6 +341,10 @@ img, video {
   margin-top: 1rem;
 }
 
+.mt-2 {
+  margin-top: .5rem;
+}
+
 .flex {
   display: flex;
 }
