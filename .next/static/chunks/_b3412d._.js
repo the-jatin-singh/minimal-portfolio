@@ -47,9 +47,13 @@ const Wisdom = ()=>{
         setLoading(true);
         setError(false);
         try {
+            const apiKey = ("TURBOPACK compile-time value", "tXkx2JwbON4JZdgbVGA4qg==QNWuy0Zm0KtIHh5A");
+            if ("TURBOPACK compile-time falsy", 0) {
+                "TURBOPACK unreachable";
+            }
             const response = await fetch(`https://api.api-ninjas.com/v1/quotes?category=${category}`, {
                 headers: {
-                    'X-Api-Key': ("TURBOPACK compile-time value", "tXkx2JwbON4JZdgbVGA4qg==QNWuy0Zm0KtIHh5A")
+                    'X-Api-Key': apiKey
                 }
             });
             if (!response.ok) {
@@ -79,12 +83,12 @@ const Wisdom = ()=>{
                         children: cat
                     }, cat, false, {
                         fileName: "[project]/app/components/Wisdom.js",
-                        lineNumber: 48,
+                        lineNumber: 52,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/components/Wisdom.js",
-                lineNumber: 46,
+                lineNumber: 50,
                 columnNumber: 7
             }, this),
             loading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -94,12 +98,12 @@ const Wisdom = ()=>{
                     className: "animate-spin text-lightTxt"
                 }, void 0, false, {
                     fileName: "[project]/app/components/Wisdom.js",
-                    lineNumber: 60,
+                    lineNumber: 64,
                     columnNumber: 13
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/Wisdom.js",
-                lineNumber: 59,
+                lineNumber: 63,
                 columnNumber: 9
             }, this) : error ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "w-full flex flex-col gap-1 items-center justify-center mt-4 h-[100px]",
@@ -109,7 +113,7 @@ const Wisdom = ()=>{
                         className: "text-lightTxt"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Wisdom.js",
-                        lineNumber: 64,
+                        lineNumber: 68,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -117,13 +121,13 @@ const Wisdom = ()=>{
                         children: "Oops! Wisdom seems to be on a break. Try again later!"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Wisdom.js",
-                        lineNumber: 65,
+                        lineNumber: 69,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/Wisdom.js",
-                lineNumber: 63,
+                lineNumber: 67,
                 columnNumber: 9
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "w-full lg:text-lg text-md flex flex-col items-center justify-center gap-5 mt-4",
@@ -133,7 +137,7 @@ const Wisdom = ()=>{
                         children: quote
                     }, void 0, false, {
                         fileName: "[project]/app/components/Wisdom.js",
-                        lineNumber: 69,
+                        lineNumber: 73,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -144,19 +148,19 @@ const Wisdom = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Wisdom.js",
-                        lineNumber: 70,
+                        lineNumber: 74,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/Wisdom.js",
-                lineNumber: 68,
+                lineNumber: 72,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/Wisdom.js",
-        lineNumber: 45,
+        lineNumber: 49,
         columnNumber: 5
     }, this);
 };
