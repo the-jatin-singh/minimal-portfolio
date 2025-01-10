@@ -10,7 +10,7 @@ export default {
       colors: {
         lightTxt: '#b1b1b1',
         darkTxt: '#333333',
-        highlighter: '#9970f82c',
+        highlighter: '#EDE6FE',
         highlightedTxt: '#31313196',
       },
     },

@@ -10,9 +10,9 @@ const NavItems = ({wisdom=true}) => {
           <Sparkle size={17} className='hover:animate-bump' />
         </Link>
       )}
-        <Link href="/wisdom">
+        {/* <Link href="/wisdom">
           <Radiation size={17} className='hover:animate-bump' />
-        </Link>
+        </Link> */}
     </div>
   )
 }

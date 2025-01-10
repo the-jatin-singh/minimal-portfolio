@@ -47,7 +47,7 @@ const Wisdom = () => {
 
   return (
     <div className='w-full flex flex-col items-start min-h-[293px]'>
-      <div className='mb-4 flex gap-2'>
+      <div className='mb-4 flex flex-wrap gap-2'>
         {categories.map((cat) => (
           <div
             key={cat}

@@ -4,6 +4,7 @@ import { MoveLeft } from 'lucide-react'
 import Link from 'next/link'
 import Work from '../components/Work'
 import NavItems from '../components/NavItems'
+import SpecialAnchorTag from '../components/SpecialAnchorTag'
 
 const page = () => {
     return (
@@ -17,7 +18,9 @@ const page = () => {
             </div>
             <NavItems />
             </div>
-            <p className='md:text-lg text-md text-lightTxt'>My areas of expertise and my level of proficiency in each are as follows:</p>
+            <p className='md:text-lg text-md text-lightTxt'>Work in progress <SpecialAnchorTag href="https://old-jatin-singh.vercel.app/">Please head to Old website</SpecialAnchorTag></p>
+            {/* <p className='md:text-lg text-md text-lightTxt'>My areas of expertise and my level of proficiency in each are as follows:</p> */}
+            {/* <div className='prism-loader'></div> */}
         </Container>
     )
 }
