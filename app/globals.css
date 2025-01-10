@@ -7,6 +7,7 @@
   src: url('/fonts/interTight.ttf') format('opentype');
 }
 
+
 @keyframes slide-left {
   0% {
     transform: translateX(0);
@@ -92,4 +93,101 @@ html {
 ::selection {
   background: #9970f82c;
   color: #4f4f4f;
+}
+
+
+
+
+
+
+
+
+.prism-loader {
+  --size: 120px;
+  --primary: #EDE6FE;
+  --secondary: #FF0080;
+  --duration: 3s;
+  
+  width: var(--size);
+  height: var(--size);
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.prism-loader::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    var(--secondary) 0%,
+    transparent 70%
+  );
+  opacity: 0.3;
+  animation: pulse var(--duration) ease-in-out infinite;
+}
+
+.prism-loader .container {
+  width: calc(var(--size) * 0.6);
+  height: calc(var(--size) * 0.6);
+  animation: containerSpin calc(var(--duration) * 2) linear infinite;
+  transform-style: preserve-3d;
+}
+
+.prism-loader .diamond {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  background: var(--primary);
+  animation: diamondPulse var(--duration) ease-in-out infinite;
+}
+
+.prism-loader .diamond:nth-child(2) {
+  transform: rotate(45deg);
+  background: var(--secondary);
+  animation-delay: calc(var(--duration) * -0.5);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+}
+
+@keyframes containerSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes diamondPulse {
+  0%, 100% {
+    transform: scale(0.8) rotate(0deg);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1) rotate(180deg);
+    opacity: 0.7;
+  }
+}
+
+/* Hover interaction */
+.prism-loader:hover .container {
+  animation-duration: calc(var(--duration) * 1.5);
+}
+
+.prism-loader:hover .diamond {
+  filter: brightness(1.2);
 }

@@ -19,6 +19,8 @@ const page = () => {
             <NavItems />
             </div>
             <p className='md:text-lg text-md text-lightTxt'>Work in progress <SpecialAnchorTag href="https://old-jatin-singh.vercel.app/">Please head to Old website</SpecialAnchorTag></p>
+            {/* <p className='md:text-lg text-md text-lightTxt'>Work in progress <SpecialAnchorTag href="https://old-jatin-singh.vercel.app/">Please head to Old website</SpecialAnchorTag></p> */}
+            {/* <div className='prism-loader'></div> */}
         </Container>
     )
 }

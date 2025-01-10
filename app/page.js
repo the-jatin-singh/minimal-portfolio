@@ -32,15 +32,15 @@ const page = () => {
           <p>Explore some of my recent <SpecialAnchorTag href="/work" highlight={true}>work</SpecialAnchorTag>, or feel free to reach out.</p>
         </div>
       </div>
-      <div className='flex gap-5'>
-        <Link target='_blank' href='https://www.instagram.com/vex.ax/'>
+      <div className='flex gap-5 border-[2px] border-lightTxt py-2 px-3 rounded-full'>
+        <Link className="text-lightTxt hover:text-darkTxt" target='_blank' href='https://www.instagram.com/vex.ax/'>
           <Instagram size={17} />
         </Link>
-        <Link target='_blank' href='mailto:jatinsingh.jsin@gmail.com'>
+        <Link className="text-lightTxt hover:text-darkTxt" target='_blank' href='mailto:jatinsingh.jsin@gmail.com'>
           <Mail size={17} />
         </Link>
-        <Link target='_blank' href='https://github.com/the-jatin-singh'>
-          <Github size={17} className='' />
+        <Link className="text-lightTxt hover:text-darkTxt" target='_blank' href='https://github.com/the-jatin-singh'>
+          <Github size={17} />
         </Link>
       </div>
     </Container>

@@ -26,7 +26,7 @@ const Work = () => {
 
     return (
         <>
-            <div className='text-md md:w-[500px] w-full min-h-[250px] overflow-hidden flex flex-col items-start'>
+            <div className='text-md md:w-[500px] w-full min-h-[266px] overflow-hidden flex flex-col items-start'>
                 {selectedItems.map((item, index) => {
                     return (
                         <Link target='_blank' className='w-full' href={item.link} key={index}>
