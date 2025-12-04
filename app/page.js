@@ -33,7 +33,7 @@ const page = () => {
         </div>
       </div>
       <div className='flex gap-5 border-[2px] border-lightTxt py-2 px-3 rounded-full'>
-        <Link className="text-lightTxt hover:text-darkTxt" target='_blank' href='https://www.instagram.com/vex.ax/'>
+        <Link className="text-lightTxt hover:text-darkTxt" target='_blank' href='https://www.instagram.com/jsr.rar/'>
           <Instagram size={17} />
         </Link>
         <Link className="text-lightTxt hover:text-darkTxt" target='_blank' href='mailto:jatinsingh.jsin@gmail.com'>
